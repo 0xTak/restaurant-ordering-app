@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!-- Meta data for the site -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Meta description for SEO -->
+        <meta name="description" content="Jimmy's Diner - The best burgers and pizzas in town. Order online now!">
+        
+        <title>Mobile Ordering App</title>
+        
+        <!-- CSS for the site -->
+        <link rel="stylesheet" href="index.css">
+        
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <header class='header'>
+                <h1 class='header-text'>Jimmy's Diner</h1>
+                <p class='header-text'>The best burgers and pizzas in town.</p>
+            </header>
+            <main>
+                <!-- Menu Section -->
+                <div class="menu" id="menu"></div>
+                <!-- Order Section -->
+                <div class="order" id="order"></div>
+            </main>
+            
+            <!-- Payment Modal -->
+            <div class="modal" id="modal">
+                <div class='modal-container'>
+                    <div class="close-modal-btn-container">
+                        <button class="modal-close-btn" id="modal-close-btn">X</button>
+                    </div>
+                    <h2 class='modal-text'>Enter card details</h2>
+                    <form class='form-containter' id='payment-method'>
+                        <input 
+                            type='text' 
+                            class='modal-name' 
+                            id='name' 
+                            name='userName'
+                            placeholder='Enter your name' 
+                            required
+                            >
+                        <input 
+                            type='text' 
+                            class='modal-card-number' 
+                            id='card-number'
+                            name='userCardNumber' 
+                            placeholder="Enter your card number" 
+                            maxlength="16"
+                            required
+                            >
+                        <input 
+                            type='text' 
+                            class='modal-cvv' 
+                            id='cvv' 
+                            name='userCardCVV'
+                            placeholder='Enter CVV'
+                            maxlength="4" 
+                            required
+                            >
+                        <div class="pay-modal-btn-container">
+                            <button class="modal-pay-btn" id="modal-pay-btn" type="submit">Pay</button>
+                        </div>
+                    </form>
+                </div>
+		    </div>
+        </div>
+        
+        <!-- JavaScript -->
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

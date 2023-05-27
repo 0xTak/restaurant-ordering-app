@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #CCC;
+}
+
+body {
+    font-family: 'Smythe', cursive;
+    width: 80%;
+    min-width: 400px;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #F5F5F5;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 400;
+} 
+
+h1, p {
+    margin: 0;  
+}
+
+.header-text {
+    padding-left: 2rem;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(images/ferks-guare-KEZdWfYD-ow-unsplash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: antiquewhite;
+    height: 20vh;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.item-container {
+    display: flex;
+    border-bottom: grey solid 1px;
+    justify-content: space-between;
+    padding: 25px;
+    align-items: center;
+}
+
+.product-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-details {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.product-emoji {
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    font-size: 24px;
+}
+
+/*  Order section  */
+
+.order-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.your-order {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+}
+
+.checkout-total {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    padding: 1rem 0;
+}
+
+.remove-btn {
+    flex: 1;
+    margin-left: 1rem;
+    
+}
+
+.remove-item {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-size: 0.6rem;
+    border: none;
+    color: #BBBBBB;
+    border-radius: 3px;
+}
+
+.complete-order-btn {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.complete-order {
+    background: #16DB99;
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    width: 100%;
+    padding: 1rem 0;
+    color: #FFFFFF;
+}
+
+/* Modal section */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 25rem;
+    width: 25rem;
+    min-width: 250px;
+    max-width: 500px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: #FFFFFF;
+    color: whitesmoke;
+    
+}
+
+.modal-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.modal-name,
+.modal-card-number,
+.modal-cvv {
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1.29664px solid #757575;
+    border-radius: 3.88991px;
+}
+
+.close-modal-btn-container {
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.form-containter {
+    display: flex;
+    flex-direction: column;
+}
+
+.motal-text {
+    text-align: center;
+    font-family: 'Verdana';
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.pay-modal-btn-container {
+    text-align: center;
+
+}
+
+.modal-pay-btn {
+    font-size: 1.25rem;
+    padding: 0.8rem 0;
+    width: 100%;
+    border: none;
+    margin-top: 1.5rem;
+    background: #16DB99;
+    border-radius: 3.88991px;
+    color: #FFFFFF;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:active{
+    color: red;
+    cursor: pointer;
+}
+
+.modal-display-name {
+    color: fuchsia;
+}
+
+.thank-you-container {
+    font-family: 'Smythe';
+    color: #065F46;
+    text-align: center;
+    background: #ECFDF5;
+    width: 80%;
+    padding: 0.75rem 0;
+    margin: 1rem auto;
+}
+
